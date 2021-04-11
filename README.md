@@ -1,7 +1,8 @@
 # BBRPlus-5.10.x (Tuned By MoeClub)
 
 Linux BBRplus Kernel v5.10.x ported from <a href="https://github.com/MoeClub/BBR" target="_blank">MoeClub/BBR</a> v4.14.153 <br/>
-(Please note that **IT DOES NOT** based on v5.10 version of BBR, instead just simple ported the v4.14.153 version of BBR)
+(Please note that **IT DOES NOT** based on v5.10 version of BBR, instead just simple ported the v4.14.153 version of BBR)<br/>
+And I only tweak .patch file values to match MoeClubBBR's tuning.
 
 <br/><br/>
 
