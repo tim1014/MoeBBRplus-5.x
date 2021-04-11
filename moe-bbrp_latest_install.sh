@@ -20,8 +20,8 @@ echo -e "\n\nDownload Image\n\n"
 wget --no-check-certificate -qP '/tmp' $imgurl
 
 # Install Kernel
-dpkg -i '/tmp/linux-headers-${kernel_ver}_${kernel_ver}_amd64.deb'
-dpkg -i '/tmp/linux-image-${kernel_ver}_${kernel_ver}_amd64.deb'
+dpkg -i '/tmp/linux-headers-$kernel_ver_$kernel_ver_amd64.deb'
+dpkg -i '/tmp/linux-image-$kernel_ver_$kernel_ver_amd64.deb'
 [ $? -eq 0 ] || exit 1 
 
 # Update /etc/sysctl.conf
