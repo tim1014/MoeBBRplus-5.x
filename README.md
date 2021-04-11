@@ -38,7 +38,7 @@ ss -ti
 
 <br/><br/>
 
-# Patch and build kernel yourself
+# Patch and build kernel by yourself
 
 ### Requirement and Perparation
 1. GCC >= 4.9, check with "gcc --version"m or install / upgrade if you haven't.
