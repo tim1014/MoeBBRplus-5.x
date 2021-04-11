@@ -92,6 +92,7 @@ press "y" key when asked
 <br/>
 
 press Enter key when asked (if dont know what is what)
+P.S Beware of [CONFIG_SYSTEM_TRUSTED_KEYS]
 
 
 <br/>
