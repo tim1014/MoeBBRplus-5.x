@@ -11,8 +11,8 @@ kernel_ver_backup="5.10.29-bbrplus"
 kernel_ver=$(wget -qO- "https://github.com/tim1014/MoeBBRplus-5.x/tags"|grep "/tim1014/MoeBBRplus-5.x/releases/tag/"|head -1|sed -r 's/.*tag\/(.+)\">.*/\1/')
 [[ -z ${kernel_ver} ]] && kernel_ver=${kernel_ver_backup}
 
-headurl=https://github.com/tim1014/MoeBBRplus-5.x/releases/download/${kernel_ver}/linux-headers-${kernel_ver}_${kernel_ver}_amd64.deb
-imgurl=https://github.com/tim1014/MoeBBRplus-5.x/releases/download/${kernel_ver}/linux-image-${kernel_ver}_${kernel_ver}_amd64.deb
+headurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/${kernel_ver}/linux-headers-${kernel_ver}_${kernel_ver}_amd64.deb"
+imgurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/${kernel_ver}/linux-image-${kernel_ver}_${kernel_ver}_amd64.deb"
 
 echo -e "\n\nDownload Header\n\n"
 wget --no-check-certificate -qP '/tmp' $headurl
@@ -20,8 +20,8 @@ echo -e "\n\nDownload Image\n\n"
 wget --no-check-certificate -qP '/tmp' $imgurl
 
 # Install Kernel
-dpkg -i '/tmp/linux-headers-$kernel_ver_$kernel_ver_amd64.deb'
-dpkg -i '/tmp/linux-image-$kernel_ver_$kernel_ver_amd64.deb'
+dpkg -i "/tmp/linux-headers-${kernel_ver}_${kernel_ver}_amd64.deb"
+dpkg -i "/tmp/linux-image-${kernel_ver}_${kernel_ver}_amd64.deb"
 [ $? -eq 0 ] || exit 1 
 
 # Update /etc/sysctl.conf
