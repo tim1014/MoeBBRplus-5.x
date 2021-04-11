@@ -33,13 +33,11 @@ bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/tim10
 
 Latest (Unstable):
 bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/tim1014/MoeBBRplus-5.x/main/moe-bbrp_latest_install.sh')
-
 ```
 Check with the command (IDK why lsmod not showing bbrplus as a module)
 ```
 Dependency: iproute2
 ss -ti
-
 ```
 
 <br/><br/>
@@ -82,7 +80,6 @@ cp ../convert_official_linux-5.10.x_src_to_bbrplus.patch .
 5. Do patch job.
 ```
 patch -p1 < convert_official_linux-5.10.x_src_to_bbrplus.patch
-
 ```
 6. Config build parameters based on current kernel settings.
 ```
