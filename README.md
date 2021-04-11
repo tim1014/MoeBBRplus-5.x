@@ -84,7 +84,7 @@ patch -p1 < convert_official_linux-5.10.x_src_to_bbrplus.patch
 ```
 make oldconfig
 
-Press Enter key when asked (if you don't know what it is)
+Press "Enter" key when asked (if you don't know what it is)
 Beware option "CONFIG_SYSTEM_TRUSTED_KEYS"
 ```
 7. Disable debug info & module signing.
