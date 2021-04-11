@@ -33,7 +33,7 @@ sed -i '$a\net.core.default_qdisc=fq_codel\nnet.ipv4.tcp_congestion_control=bbrp
 # Remove other kernel and update-grub
 item="linux-image-${kernel_ver}"
 while true; do
-  List_Kernel="$(dpkg -l |grep 'linux-image\|linux-modules\|linux-generic' |grep -v "${item}")"
+  List_Kernel="$(dpkg -l |grep 'linux-image\|linux-modules\|linux-generic\|linux-headers' |grep -v "${item}")"
   Num_Kernel="$(echo "$List_Kernel" |sed '/^$/d' |wc -l)"
   [ "$Num_Kernel" -eq "0" ] && break
   for kernel in `echo "$List_Kernel" |awk '{print $2}'`
