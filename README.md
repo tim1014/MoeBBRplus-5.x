@@ -30,4 +30,17 @@ You can simply just use releases compiled by me in "Releases" section (deb Only)
 
 # Patch and build kernel yourself
 ### Requirement and Perparation
-GCC is >= 4.9
+GCC >= 4.9, check with "gcc --version"m or install / upgrade if you haven't.
+```
+CentOS:
+sudo yum groupinstall Development tools
+sudo yum install ncurses-devel bc gcc gcc-c++ ncurses ncurses-devel cmake elfutils-libelf-devel openssl-devel rpm-build redhat-rpm-config asciidoc hmaccalc perl-ExtUtils-Embed xmlto audit-libs-devel binutils-devel elfutils-devel elfutils-libelf-devel newt-devel python-devel zlib-devel
+
+Debian:
+sudo apt install build-essential libncurses5-dev
+sudo apt build-dep linux
+```
+
+<br/>
+
+### Build kernel
