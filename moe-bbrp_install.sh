@@ -1,5 +1,7 @@
 #!/bin/bash
 
+## Thanks MoeClub for the script
+
 # Check root
 [ "$EUID" -ne '0' ] && echo -e "\n\nError: This script must be run as root!\n\n" && exit 1;
 
