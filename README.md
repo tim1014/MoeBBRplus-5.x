@@ -1,12 +1,12 @@
-# bbrplus-5.10
-Linux BBRplus Kernel 5.10 ported from BBRplus 4.14  
-(note that it does NOT based on 5.10 version of BBR, instead just simple ported the 4.14 version of BBRplus)
+# bbrplus-5.10.x
+Linux BBRplus Kernel 5.10.x ported from BBR-EDIT (from MoeClub) 4.14.153
+(note that it does NOT based on 5.10 version of BBR, instead just simple ported the 4.14.153 version of BBR-EDIT)
 <br/>
 <br/>
 <br/>
 
 ***based on original version***  
-https://github.com/cx9208/bbrplus 
+https://github.com/MoeClub/BBR
   
 <br/>
 <br/> 
