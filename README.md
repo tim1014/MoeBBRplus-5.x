@@ -1,18 +1,17 @@
-# bbrplus-5.10.x
+# bbrplus-5.10.x (MoeClub)
+
 Linux BBRplus Kernel 5.10.x ported from BBR-EDIT (from MoeClub) 4.14.153
 (note that it does NOT based on 5.10 version of BBR, instead just simple ported the 4.14.153 version of BBR-EDIT)
-<br/>
-<br/>
-<br/>
 
-***based on original version***  
+<hr/><br/><br/>
+
+***Based on original version (Thanks to them)***
 https://github.com/MoeClub/BBR<br/>
 https://github.com/UJX6N/bbrplus-5.10
-  
-<br/>
-<br/> 
 
-## some improvements as Jan-2021
+<br/><br/> 
+
+## Improvements as Jan-2021
 
 ###  i)   merged official v4.14 tcp_bbr patches between 2018-20 into bbrplus  
 ###  ii)  keep official v5.10 tcp_bbr module in the kernel, now can do either  
