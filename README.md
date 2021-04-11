@@ -92,7 +92,7 @@ If anything goes wrong, check the "build.log" file.
 9. Collect Kernel Package Files (if succeed)
 ```
 CentOS Files:
-/[home_dir]/rpmbuild/RPMS/x86_64/
+/[usr_dir]/rpmbuild/RPMS/x86_64/
 
 Debian:
 Current Directory
