@@ -16,7 +16,7 @@ https://github.com/UJX6N/bbrplus-5.10
 # Highlights
 
 - Merged MoeClub v4.14.153 "tcp_bbr" patches into bbrplus.
-- Keep official v5.10 "tcp_bbr" module in the kernel, now can do either (usage below).
+- Keep official v5.x "tcp_bbr" module in the kernel, now can do either (usage below).
 ```
 net.ipv4.tcp_congestion_control = bbrplus
 net.ipv4.tcp_congestion_control = bbr
