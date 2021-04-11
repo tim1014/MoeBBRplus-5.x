@@ -23,7 +23,7 @@ net.ipv4.tcp_congestion_control = bbrplus    or    net.ipv4.tcp_congestion_contr
 <br/>
 
 ## patch & build bbrplus kernel youself
-(or you can use releases compiled by me in "Releases" section)   
+You can use releases compiled by me in "Releases" section (Debian Only)
 <br/>
 ***(build requirement to GCC is >= 4.9, so GCC upgrade is needed if use CentOS 7.x as builder)*** 
 <br/>
@@ -91,7 +91,7 @@ press "y" key when asked
 
 <br/>
 
-press Enter key when asked (if dont know what is what)
+press Enter key when asked (if dont know what is what)<br/>
 P.S Beware of [CONFIG_SYSTEM_TRUSTED_KEYS]
 
 
