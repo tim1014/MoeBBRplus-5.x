@@ -25,7 +25,7 @@ net.ipv4.tcp_congestion_control = bbr
 
 # Install
 
-You can simply just use releases compiled by me in "Releases" section (deb Only, tested on Debian 9.13)<br/>
+You can simply just use releases compiled by me in "Releases" section (deb only, tested on Debian 9.13)<br/>
 Script auto install available (tested on Debian 9.13 only, CentOS not supported)
 ```
 v5.10.29 (Stable):
