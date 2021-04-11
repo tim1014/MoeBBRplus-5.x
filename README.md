@@ -26,6 +26,10 @@ net.ipv4.tcp_congestion_control = bbr
 # Install
 
 You can simply just use releases compiled by me in "Releases" section (deb Only, tested on Debian 9.13)<br/>
+Script auto install available (tested on Debian 9.13 only, CentOS not supported)
+```
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/tim1014/moe_bbrplus-5.10/main/moe-bbrp_install.sh')
+```
 Check with the command (IDK why lsmod not showing bbrplus as a module)
 ```
 Dependency: iproute2
