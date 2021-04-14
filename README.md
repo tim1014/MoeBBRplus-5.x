@@ -45,7 +45,7 @@ ss -ti
 # Patch and build kernel by yourself
 
 ### Requirement and Perparation
-1. GCC >= 4.9, check with "gcc --version" or install / upgrade if you haven't.
+1. GCC >= 4.9, check with "gcc --version" or install / upgrade using below command.
 2. Install dependencies for building kernel (assume that you are root)
 ```
 CentOS:
