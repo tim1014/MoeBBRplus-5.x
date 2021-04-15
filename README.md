@@ -29,7 +29,7 @@ You can simply just use releases compiled by me in "Releases" section (deb only,
 Script auto install available (tested on Debian 9.13 only, CentOS not supported)
 ```
 v5.10.30 (Stable):
-bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/tim1014/MoeBBRplus-5.x/main/moe-bbrp_5.10.29_install.sh')
+bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/tim1014/MoeBBRplus-5.x/main/moe-bbrp_5.10.30_install.sh')
 
 Latest (Unstable):
 bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/tim1014/MoeBBRplus-5.x/main/moe-bbrp_latest_install.sh')
