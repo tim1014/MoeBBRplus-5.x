@@ -7,7 +7,7 @@
 
 # Donwload
 ## Check latest version
-kernel_ver_backup="5.10.29-bbrplus"
+kernel_ver_backup="5.10.30-bbrplus"
 kernel_ver=$(wget -qO- "https://github.com/tim1014/MoeBBRplus-5.x/tags"|grep "/tim1014/MoeBBRplus-5.x/releases/tag/"|head -1|sed -r 's/.*tag\/(.+)\">.*/\1/')
 [[ -z ${kernel_ver} ]] && kernel_ver=${kernel_ver_backup}
 
