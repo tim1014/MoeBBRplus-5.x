@@ -101,7 +101,6 @@ make rpm-pkg LOCALVERSION=-bbrplus 2>&1 | tee build.log
 Debian:
 make deb-pkg LOCALVERSION=-bbrplus 2>&1 | tee build.log
 
-You can add -j [core_count] after "make" to use multi core.
 If anything goes wrong, check the "build.log" file.
 ```
 9. Collect Kernel Package Files (if succeed)
