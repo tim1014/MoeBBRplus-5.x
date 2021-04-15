@@ -25,8 +25,8 @@ while [ -z "$(sed -n '$p' /etc/sysctl.conf)" ]; do sed -i '$d' /etc/sysctl.conf;
 sed -i '$a\net.core.default_qdisc=fq_codel\nnet.ipv4.tcp_congestion_control=bbrplus\n\n' /etc/sysctl.conf
 
 # Remove other kernel and update-grub
-img="linux-image-${kernel_ver}"
-header="linux-headers-${kernel_ver}"
+img="linux-image-5.10.30-bbrplus"
+header="linux-headers-5.10.30-bbrplus"
 while true; do
   List_Kernel="$(dpkg -l |grep 'linux-image\|linux-modules\|linux-generic\|linux-headers' |grep -v "${img}\|${header}")"
   Num_Kernel="$(echo "$List_Kernel" |sed '/^$/d' |wc -l)"
