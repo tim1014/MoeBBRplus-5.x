@@ -6,16 +6,16 @@
 [ "$EUID" -ne '0' ] && echo -e "\n\nError: This script must be run as root!\n\n" && exit 1;
 
 # Donwload
-headurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/5.10.30-bbrplus/linux-headers-5.10.30-bbrplus_5.10.30-bbrplus_amd64.deb"
-imgurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/5.10.30-bbrplus/linux-image-5.10.30-bbrplus_5.10.30-bbrplus_amd64.deb"
+headurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/5.10.29-bbrplus/linux-headers-5.10.29-bbrplus_5.10.29-bbrplus_amd64.deb"
+imgurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/5.10.29-bbrplus/linux-image-5.10.29-bbrplus_5.10.29-bbrplus_amd64.deb"
 echo -e "\n\nDownload Header\n\n"
 wget --no-check-certificate -qP '/tmp' $headurl
 echo -e "\n\nDownload Image\n\n"
 wget --no-check-certificate -qP '/tmp' $imgurl
 
 # Install Kernel
-dpkg -i "/tmp/linux-headers-5.10.30-bbrplus_5.10.30-bbrplus_amd64.deb"
-dpkg -i "/tmp/linux-image-5.10.30-bbrplus_5.10.30-bbrplus_amd64.deb"
+dpkg -i "/tmp/linux-headers-5.10.29-bbrplus_5.10.29-bbrplus_amd64.deb"
+dpkg -i "/tmp/linux-image-5.10.29-bbrplus_5.10.29-bbrplus_amd64.deb"
 [ $? -eq 0 ] || exit 1 
 
 # Update /etc/sysctl.conf
