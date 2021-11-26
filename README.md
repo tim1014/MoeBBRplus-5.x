@@ -9,7 +9,8 @@ And I only tweak .patch file values to match MoeClub-BBR's tuning.
 # Credits
 
 https://github.com/MoeClub/BBR<br/>
-https://github.com/UJX6N/bbrplus-5.10
+https://github.com/UJX6N/bbrplus-5.10<br/>
+https://github.com/ylx2016/kernel
 
 <br/><br/>
 
