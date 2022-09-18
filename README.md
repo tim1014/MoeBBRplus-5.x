@@ -76,11 +76,11 @@ tar zxvf linux-5.19.9.tar.gz && cd linux-5.19.9
 4. Copy convert path to extracted kernel directory.
 ```
 Example:
-cp ../convert_official_linux-5.10.x_src_to_bbrplus.patch .
+cp ../convert_official_linux-5.19.x_src_to_bbrplus.patch .
 ```
 5. Do patch job.
 ```
-patch -p1 < convert_official_linux-5.10.x_src_to_bbrplus.patch
+patch -p1 < convert_official_linux-5.19.x_src_to_bbrplus.patch
 ```
 6. Config build parameters based on current kernel settings.
 ```
