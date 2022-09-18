@@ -28,7 +28,7 @@ dpkg -i "/tmp/linux-image-${kernel_ver}_${kernel_ver}_amd64.deb"
 sed -i '/net\.core\.default_qdisc/d' /etc/sysctl.conf
 sed -i '/net\.ipv4\.tcp_congestion_control/d' /etc/sysctl.conf
 while [ -z "$(sed -n '$p' /etc/sysctl.conf)" ]; do sed -i '$d' /etc/sysctl.conf; done
-sed -i '$a\net.core.default_qdisc=fq_codel\nnet.ipv4.tcp_congestion_control=bbrplus\n\n' /etc/sysctl.conf
+sed -i '$a\net.core.default_qdisc=fq_pie\nnet.ipv4.tcp_congestion_control=bbrplus\n\n' /etc/sysctl.conf
 
 # Remove other kernel and update-grub
 img="linux-image-${kernel_ver}"
