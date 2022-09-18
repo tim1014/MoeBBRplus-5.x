@@ -66,12 +66,12 @@ apt build-dep linux
 2. Download official Linux Kernel at https://cdn.kernel.org/pub/linux/kernel/v5.x/.
 ```
 Example:
-wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.10.29.tar.gz
+wget https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.19.9.tar.gz
 ```
 3. Extract tar.gz and Change Directory.
 ```
 Example:
-tar zxvf linux-5.10.29.tar.gz && cd linux-5.10.29
+tar zxvf linux-5.19.9.tar.gz && cd linux-5.19.9
 ```
 4. Copy convert path to extracted kernel directory.
 ```
