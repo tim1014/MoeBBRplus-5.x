@@ -30,7 +30,7 @@ sed -i '/net\.ipv4\.tcp_congestion_control/d' /etc/sysctl.conf
 while [ -z "$(sed -n '$p' /etc/sysctl.conf)" ]; do sed -i '$d' /etc/sysctl.conf; done
 sed -i '$a\net.core.default_qdisc=fq_pie\nnet.ipv4.tcp_congestion_control=bbrplus\n\n' /etc/sysctl.conf
 
-# Remove other kernel and update-grub
+: << 'COMMENT' # Remove other kernel and update-grub (commented for better compatibility)
 img="linux-image-${kernel_ver}"
 header="linux-headers-${kernel_ver}"
 while true; do
@@ -47,5 +47,6 @@ while true; do
     done
   done
 apt-get autoremove -y
+COMMENT
 
-echo -e "\n\nPlease reboot...\n\n"
+echo -e "\n\n\n\nPlease use command: \n\ndpkg -l |grep 'linux-image\|linux-modules\|linux-generic\|linux-headers'\napt purge [kernel/header name] \n\nTo search and manual remove unnecessary kernel. \n\nAfter that please reboot...\n\n\n\n"
