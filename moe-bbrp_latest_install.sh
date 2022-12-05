@@ -8,11 +8,11 @@
 # Donwload
 ## Check latest version
 kernel_ver_backup="5.10.30-bbrplus"
-kernel_ver=$(wget -qO- "https://github.com/tim1014/MoeBBRplus-5.x/tags"|grep "releases/tag/"|head -1|sed -r 's/.*tag\/(.+)\">.*/\1/'|sed -r 's/.*tag\/(.+)\">.*/\1/'|grep -o '.*bbrplus')
+kernel_ver=$(wget -qO- "https://github.com/tim1014/MoeBBRplus/tags"|grep "releases/tag/"|head -1|sed -r 's/.*tag\/(.+)\">.*/\1/'|sed -r 's/.*tag\/(.+)\">.*/\1/'|grep -o '.*bbrplus')
 [[ -z ${kernel_ver} ]] && kernel_ver=${kernel_ver_backup}
 
-headurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/${kernel_ver}/linux-headers-${kernel_ver}_${kernel_ver}_amd64.deb"
-imgurl="https://github.com/tim1014/MoeBBRplus-5.x/releases/download/${kernel_ver}/linux-image-${kernel_ver}_${kernel_ver}_amd64.deb"
+headurl="https://github.com/tim1014/MoeBBRplus/releases/download/${kernel_ver}/linux-headers-${kernel_ver}_${kernel_ver}_amd64.deb"
+imgurl="https://github.com/tim1014/MoeBBRplus/releases/download/${kernel_ver}/linux-image-${kernel_ver}_${kernel_ver}_amd64.deb"
 
 echo -e "\n\nDownload Header\n\n"
 wget --no-check-certificate -qP '/tmp' $headurl
