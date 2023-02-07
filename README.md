@@ -15,6 +15,10 @@ https://github.com/ylx2016/kernel
 
 <br/><br/>
 
+# WARNING
+
+After some test on my own server. This BBR patch will perform worse on 1G up network (random network dropping & stuttering). Use it with cautions.
+
 # Highlights
 
 - Merged MoeClub v4.14.153 "tcp_bbr" patches into bbrplus.
